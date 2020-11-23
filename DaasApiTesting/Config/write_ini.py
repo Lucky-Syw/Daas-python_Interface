@@ -21,6 +21,8 @@ class write_ini:
                 col_one_content.append(''.join(col_values))
         return (col_one_content)
 
+
+
     def write_Config_Ini(self):
         col_all_content = write_ini.get_data_from_table(self,file_name)
         config = configparser.ConfigParser()
@@ -29,6 +31,8 @@ class write_ini:
         for i in col_all_content:
             config.set("operation", "case_" + i, str(i))
         config.write(open('data.ini', "w"))  # 没有新建  存在打开
+
+
 
 if __name__=="__main__":
     a = write_ini()

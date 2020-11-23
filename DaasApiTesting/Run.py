@@ -10,4 +10,4 @@ if __name__ == '__main__':
 	import time
 
 	now = time.strftime("%Y-%m-%d_%H_%M_%S")
-	pytest.main(['-s',TESTCASE_PATH , '--html=report/DaaSApiTesting{}_report.html'.format(now)])
+	pytest.main(['-s',TESTCASE_PATH+"/test_case.py" , '--html=report/DaaSApiTesting{}_report.html'.format(now)])

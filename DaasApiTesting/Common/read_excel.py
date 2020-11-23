@@ -17,7 +17,6 @@ def read_excel(excel_path=ROOT_PATH + "/case_data/case.xlsx", sheet_name="Sheet1
     workbook = xlrd.open_workbook(excel_path)
     # 获取所有sheet
     # print(workbook.sheet_names())  # [u'sheet1', u'sheet2']
-
     # 根据sheet索引或者名称获取sheet内容
     sheet = workbook.sheet_by_name(sheet_name)  # sheet索引从0开始
 
@@ -35,8 +34,13 @@ def read_excel(excel_path=ROOT_PATH + "/case_data/case.xlsx", sheet_name="Sheet1
         all_rows.append(sheet.row_values(i))
     for row in all_rows:
         lis = dict(zip(first_row, row))
+        if lis.get("is_run").upper()=="NO":
+            continue
         rows_dict.append(lis)
     return rows_dict
+
+
+
 
 
 # if __name__ == '__main__':
