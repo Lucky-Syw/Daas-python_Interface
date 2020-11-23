@@ -1,0 +1,4 @@
+`1、run时报错，报错信息如下：`
+    `py._path.local.LocalPath.ImportMismatchError: ('conftest', '/Users/lucky/Downloads/DaasApiTesting/test_case/conftest.py', local('/xxxx/conftest.py'))`
+    **解决方案:**
+        删除所有的.pyc文件(打开所有文件夹查看，看大：__pycache__ 就进行删除)
