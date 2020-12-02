@@ -1,0 +1,10 @@
+1、如何配置要执行的模块和测试用例？
+    1）可手动在module_run.ini---->Module---->手动添加--->excel中sheet页命名的模块名称
+    2）运行write_module_run.py，获取到所有的模块并---->自动写入--->module_run.ini文件
+
+2、module_run.ini中字段的含义解释？
+    1）module_run：excel中为 sheet页 命名的模块内容，决定是否要执行的模块（将不运行的模块名称从列表中删除即可）
+    2）case_run：excel中为 is_run 字段标识的内容，决定是否执行的测试用例
+        ALL：运行所有的内容
+        NO：只运行  no 的用例执行
+        YES：只运行 yes 的用例执行

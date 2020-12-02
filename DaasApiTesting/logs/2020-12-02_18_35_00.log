@@ -1,0 +1,23 @@
+2020-12-02 18:35:01,239 -[line:125] - INFO: 用例描述====>新建项目
+2020-12-02 18:35:01,408 -[line:165] - INFO: 请求方式====>POST
+2020-12-02 18:35:01,408 -[line:166] - INFO: 请求地址====>http://daas.test.deepexi.top/deepexi-daas-security/api/v1/projects?tenantId=None&userId=None&_=1597633712784
+2020-12-02 18:35:01,408 -[line:167] - INFO: 请求头====>{
+    "Authorization": "Bearer None",
+    "Content-Type": "application/json;charset=UTF-8"
+}
+2020-12-02 18:35:01,409 -[line:168] - INFO: 请求参数====>""
+2020-12-02 18:35:01,409 -[line:169] - INFO: 请求体====>{
+    "name": "sywLH32343",
+    "code": "syw_1inlihui",
+    "type": 0,
+    "description": "请不要删除",
+    "modelType": 0,
+    "devComputeResourceId": "1327806754129444962",
+    "prodComputeResourceId": "1327807242262544429",
+    "businessSegmentId": "1293082610561450037"
+}
+2020-12-02 18:35:01,409 -[line:172] - INFO: Cookies====>""
+2020-12-02 18:35:01,409 -[line:173] - INFO: 接口响应状态码====>401
+2020-12-02 18:35:01,409 -[line:174] - INFO: 接口响应头为====>{'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Cache-Control': 'no-store', 'Pragma': 'no-cache', 'WWW-Authenticate': 'Bearer realm="oauth", error="invalid_client", error_description="Bad client credentials"', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'X-Frame-Options': 'DENY', 'Date': 'Wed, 02 Dec 2020 10:35:01 GMT', 'X-Kong-Upstream-Latency': '16', 'X-Kong-Proxy-Latency': '0', 'Via': 'kong/2.0.2', 'Access-Control-Allow-Origin': '*'}
+2020-12-02 18:35:01,409 -[line:175] - INFO: 接口响应体为====>{"payload":{"error":"invalid_client","error_description":"Bad client credentials"},"code":401,"msg":"Bad client credentials"}
+2020-12-02 18:35:01,410 -[line:133] - ERROR: 断言失败,实际值：Bad client credentials 不等于 预期值：ok

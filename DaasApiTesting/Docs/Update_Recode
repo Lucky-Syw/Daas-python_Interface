@@ -1,12 +1,16 @@
 #------尚艳文--更新记录
 
 【日期】12.2
-1、read_excel.py文件更新，优化通过Excel的不同sheet页来读取测试用例数据
+1、新增module_run.ini文件，用途：配置需要执行的模块和模块中的用例
+2、新增write_module_run.py文件，用途：读取Excel文件中的模块，并设置Case的默认值为ALL
+3、read_excel.py文件更新
+    1）优化通过获取Excel所有的sheet页，来确定要执行的模块用例
+    2）优化通过读取配置文件module_run.ini中的Case、Module来确定运行的模块和测试用例
 
 【日期】11.28
-1、删除sheet_name的复制，改为直接获取sheet页的名称
+1、删除sheet_name的复制，改为直接获取sheet页的名称，用途:灵活获取设置的sheet的名称
 
 【日期】11.27
 1、更新config.py文件，新增is_run。目的：根据excel中的is_run中的字段值读取执行用例
-2、更新run.py文件，新增unittest的报告类型。目的：运行时可选择需要的测试报告样式
+2、更新run.py文件，新增unittest的报告类型。用途：运行时可选择需要的测试报告样式
 
