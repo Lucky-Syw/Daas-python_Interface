@@ -119,8 +119,9 @@ class Test(unittest.TestCase):
 
     @data(*api_data)
     @unpack
-    def test_(self,is_run,descrption,url, method, headers, cookies, params, body, file, verify, saves, dbtype, db, setup_sql,
+    def test_descrption(self,is_run,descrption,url, method, headers, cookies, params, body, file, verify, saves, dbtype, db, setup_sql,
               teardown_sql):
+        '''登录操作'''
         logger.info("用例描述====>" + descrption)
         db_connect = None
         redis_db_connect = None

@@ -15,6 +15,7 @@ ROOT_PATH = os.path.abspath(os.path.dirname(__file__)[:-7])
 print(ROOT_PATH)
 # 定义测试用例的路径
 TESTCASE_PATH = os.path.join(ROOT_PATH, 'test_Case')
+
 # 定义测报告的路径
 REPORT_PATH = os.path.join(BASE_PATH, 'Report/')
 # 定义日志文件的路径
@@ -34,4 +35,11 @@ REDIS_PASSWORD = 'wYgXEBujiLq@'
 # host
 TEST_HOST = 'http://daas.test.deepexi.top'
 
+#定义：要运行的测试用例，（注：每个sheet页的每条测试用例是否全部执行，ALL：全部执行，NO：不执行。YES：执行）
+is_run = "ALL"  #ALL/NO/yes
+
+#定义：要运行的模块（注：每个sheet页都是不同的模块，ALL：全部执行，NO：不执行，YES：执行）
+no_module=[]
+yes_module=[]
+module_run = "ALL"   #默认
 
